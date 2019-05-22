@@ -31,34 +31,4 @@
             src="src/android/spotify-sdk/spotify-player-24-noconnect-2.20b.aar"
             target="libs/spotify-sdk.aar" />
     </platform>
-
-    <platform name="ios">
-        <hook type="before_plugin_install" src="install-ios.sh" />
-
-        <config-file target="config.xml" parent="/*">
-            <feature name="SpotifyConnector">
-                <param name="ios-package" value="CordovaSpotify" />
-            </feature>
-        </config-file>
-
-        <config-file target="*-Info.plist" parent="UIBackgroundModes">
-            <array>
-                <string>audio</string>
-            </array>
-        </config-file>
-
-        <header-file src="src/ios/CordovaSpotify.h" />
-        <source-file src="src/ios/CordovaSpotify.m" />
-        <header-file src="src/ios/CordovaSpotifyEventEmitter.h" />
-        <source-file src="src/ios/CordovaSpotifyEventEmitter.m" />
-        <header-file src="src/ios/AudioStreamingDelegate.h" />
-        <source-file src="src/ios/AudioStreamingDelegate.m" />
-        <header-file src="src/ios/AudioStreamingPlaybackDelegate.h" />
-        <source-file src="src/ios/AudioStreamingPlaybackDelegate.m" />
-
-        <framework src="src/ios/spotify-sdk/SpotifyAudioPlayback.framework" custom="true" />
-        <framework src="src/ios/spotify-sdk/SpotifyAuthentication.framework" custom="true" />
-        <framework src="src/ios/spotify-sdk/SpotifyMetadata.framework" custom="true" />
-        <framework src="AVFoundation.framework" />
-    </platform>
 </plugin>
