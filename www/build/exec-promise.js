@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var queue_1 = cordova.require("cordova-spotify.async/queue");
+var queue_1 = cordova.require('cordova-spotify.async');
 var _exec = cordova.exec;
-var q = queue_1["default"](function (_a, cb) {
+var q = async.queue(function (_a, cb) {
     var methodName = _a.methodName, args = _a.args;
     // Delay the resolution and rejection callbacks because
     // the Spotify SDKs do not like being reinvoked from inside
