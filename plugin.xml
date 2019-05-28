@@ -3,7 +3,7 @@
     <name>cordova-spotify</name>
 
     <js-module name="cordova-spotify" src="www/build/cordova-spotify.js">
-        <merges target="cordova.plugins" />
+        <merges target="cordova.plugins.spotify" />
     </js-module>
 
     <js-module src="www/build/eventemitter3.js" name="eventemitter3" />
