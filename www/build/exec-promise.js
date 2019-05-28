@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var queue_1 = cordova.require('cordova-spotify.async');
+var async = cordova.require('cordova-spotify.async');
 var _exec = cordova.exec;
 var q = async.queue(function (_a, cb) {
     var methodName = _a.methodName, args = _a.args;
