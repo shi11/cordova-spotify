@@ -5,7 +5,7 @@
  * @licence MIT
  */
 exports.__esModule = true;
-var exec_promise_1 = require("../lib/exec-promise.js");
+var exec_promise_1 = require("/lib/exec-promise.js");
 var eventemitter3_1 = require("eventemitter3.js");
 /** @hidden */
 var emitter;
