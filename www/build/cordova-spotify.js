@@ -5,8 +5,8 @@
  * @licence MIT
  */
 exports.__esModule = true;
-var exec_promise_1 = require("./exec-promise");
-var eventemitter3_1 = require("./eventemitter3");
+var exec_promise_1 = cordova.require('cordova-spotify.exec-promise');
+var eventemitter3_1 = cordova.require('cordova-spotify.eventemitter3');
 /** @hidden */
 var emitter;
 /** @hidden */

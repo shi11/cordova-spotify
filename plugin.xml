@@ -6,6 +6,9 @@
         <merges target="cordova.plugins" />
     </js-module>
 
+    <js-module src="www/build/eventemitter3.js" name="eventemitter3" />
+    <js-module src="www/build/exec-promise.js" name="exec-promise" />
+
     <dependency id="es6-promise-plugin"/>
 
     <platform name="android">
